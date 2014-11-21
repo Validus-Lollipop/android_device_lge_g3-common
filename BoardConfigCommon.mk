@@ -116,15 +116,5 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Radio
 BOARD_RIL_CLASS := ../../../device/lge/g3-common/ril/
 
-# SELinux
-BOARD_SEPOLICY_DIRS += \
-    $(LOCAL_PATH)/sepolicy
-
-BOARD_SEPOLICY_UNION := \
-    app.te \
-    device.te \
-    file_contexts \
-    ueventd.te
-
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
